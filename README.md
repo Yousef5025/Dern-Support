@@ -40,7 +40,7 @@
 
 ## 📁 Folder Structure
 Dern-Support/
-├── app/ # Laravel application files
+├── app/ # Laravel application files</br>
 ├── Course/ # Secondary Laravel app (possibly a module or separate instance)
 ├── public/ # Public assets and entry point
 ├── resources/ # Blade views, JS, CSS
