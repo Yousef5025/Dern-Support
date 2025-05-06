@@ -38,8 +38,8 @@
 
 ---
 
-## 📁 Folder Structure
-Dern-Support/
+## 📁 Folder Structure</br>
+Dern-Support/</br>
 ├── app/ # Laravel application files</br>
 ├── Course/ # Secondary Laravel app (possibly a module or separate instance)</br>
 ├── public/ # Public assets and entry point</br>
