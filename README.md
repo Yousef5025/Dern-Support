@@ -39,4 +39,12 @@
 ---
 
 ## 📁 Folder Structure
-
+Dern-Support/
+├── app/ # Laravel application files
+├── Course/ # Secondary Laravel app (possibly a module or separate instance)
+├── public/ # Public assets and entry point
+├── resources/ # Blade views, JS, CSS
+├── routes/ # Web and API routes
+├── laravel_react_project/ # React frontend
+├── config/ # Configuration files
+└── database/ # Migrations and seeders
