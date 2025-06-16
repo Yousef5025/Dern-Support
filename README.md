@@ -13,8 +13,8 @@ Core CRUD features are being implemented using Laravel and MySQL. Future updates
 - [x] Edit product details
 - [x] Delete product
 - [x] View list of products
+- [x] Authentication system
 - [ ] Search and filter
-- [ ] Authentication system
 - [ ] Responsive UI improvements
 
 ## 🛠️ Built With
