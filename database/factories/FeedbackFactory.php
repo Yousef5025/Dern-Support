@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Order;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -17,7 +18,12 @@ class FeedbackFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'user_id' => 1, // Assuming a user with ID 1 exists
+            'order_id' => Order::factory(),
+            'rate' => $this->faker->numberBetween(1, 5),
+            'description' => $this->faker->sentence(8),
+            'created_at' => now(),
+            'updated_at' => now(),
         ];
     }
 }
