@@ -16,9 +16,9 @@ export default function AdminLayout(){
   }
 
     if(user.role === "customer"){
-      return <Navigate to='/home'/>
+      return <Navigate to='/customer/home'/>
     }
-    
+
     const onLogout =  (ev) =>{
       ev.preventDefault();
       axiosClient.get('/logout')

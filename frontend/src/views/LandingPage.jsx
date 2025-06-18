@@ -13,7 +13,7 @@ function LandingPage() {
   if(!token){
     return <Navigate to='/login'/>
   }
-  
+
 
   useEffect(() => {
       axiosClient.get('/user')
@@ -31,7 +31,7 @@ function LandingPage() {
           <h1>Hello {user.name} To</h1>
           <h1>Your Trusted IT Support Partner</h1>
           <p>Fast, reliable, and professional IT solutions for businesses and individuals.</p>
-          <Link to='/orders/new' className="cta-button">Add Request</Link>
+          <Link to='/customer/orders/new' className="cta-button">Add Request</Link>
         </div>
       </section>
 

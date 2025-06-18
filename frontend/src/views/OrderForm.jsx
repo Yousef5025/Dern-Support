@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import axiosClient from "../axiosClient";
-import "../modules/OrderForm.css"; 
+import "../modules/OrderForm.css";
 
 export default function UserForm() {
     const { id } = useParams();
@@ -38,7 +38,7 @@ export default function UserForm() {
 
         request
             .then(() => {
-                navigate('/orders');
+                navigate('/customer/orders');
             })
             .catch((err) => {
                 const response = err.response;

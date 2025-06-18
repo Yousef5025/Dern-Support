@@ -48,7 +48,7 @@ export default function UserForm() {
 
         request
             .then(() => {
-                navigate('/orders');
+                navigate('/customer/orders');
             })
             .catch((err) => {
                 const response = err.response;

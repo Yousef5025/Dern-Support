@@ -1,8 +1,8 @@
 import { createBrowserRouter } from 'react-router-dom';
 import Login from './views/login.jsx';
 import Register from './views/register.jsx';
-import CustomerLayout from './Components/CustomerLayout.jsx';
-import GuestLayout from './Components/GuestLayout.jsx';
+import CustomerLayout from './layouts/CustomerLayout.jsx';
+import GuestLayout from './layouts/GuestLayout.jsx';
 import Technicals from './views/Technicals.jsx';
 import TechnicalForm from './views/TechnicalForm.jsx';
 import Orders from './views/orders.jsx';
@@ -10,41 +10,41 @@ import OrderForm from './views/OrderForm.jsx'
 import FeedbackForm from './views/FeedbackForm.jsx'
 import LandingPage from './views/LandingPage.jsx'
 import Feedbacks from './views/Feedbacks.jsx'
-import AdminLayout from './Components/AdminLayout.jsx'
+import AdminLayout from './layouts/AdminLayout.jsx'
 import AdminDashboard from './views/AdminDashboard.jsx';
 
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: '/customer',
     element: <CustomerLayout />,
     children: [
       {
-        path: '/home',
+        path: '/customer/home',
         element: <LandingPage />
       },
       {
-        path: '/orders',
+        path: '/customer/orders',
         element: <Orders />,
       },
       {
-        path: '/orders/:id',
+        path: '/customer/orders/:id',
         element: <OrderForm key="orderUpdate" />
       },
       {
-        path: '/orders/new',
+        path: '/customer/orders/new',
         element: <OrderForm key="orderCreate" />
       },
       {
-        path: '/feedbacks',
+        path: '/customer/feedbacks',
         element: <Feedbacks />
       },
       {
-        path: '/feedbacks/new/:orderId',
+        path: '/customer/feedbacks/new/:orderId',
         element: <FeedbackForm key="feedbackCreate" />
       },
       {
-        path: '/feedbacks/:orderId/:id',
+        path: '/customer/feedbacks/:orderId/:id',
         element: <FeedbackForm key="feedbackUpdate" />
       },
     ]
