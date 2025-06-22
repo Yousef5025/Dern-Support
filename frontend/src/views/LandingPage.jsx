@@ -1,5 +1,4 @@
 import React from 'react';
-import '../modules/LandingPage.css';
 import axios from "axios";
 import { useEffect } from "react";
 import { useContext } from "react";

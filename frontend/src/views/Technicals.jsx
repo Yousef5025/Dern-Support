@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import axiosClient from "../axiosClient";
-import '../modules/technicals.css'
 
 
 export default function Technicals() {

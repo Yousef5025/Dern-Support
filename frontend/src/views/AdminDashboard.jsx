@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import axiosClient from '../axiosClient';
-import '../modules/AdminDashboard.css'
 
 
 
@@ -68,7 +67,7 @@ export default function AdminDashboard() {
   return (
     <div className="admin-dashboard">
       <h1 className="dashboard-title">Admin Dashboard</h1>
-      
+
       {/* Navigation Tabs */}
       <div className="dashboard-tabs">
         <button
@@ -189,7 +188,7 @@ export default function AdminDashboard() {
         <div className="stat-card">
           <h3>Avg. Rating</h3>
           <p className="stat-value">
-            {feedbacks.length > 0 
+            {feedbacks.length > 0
               ? (feedbacks.reduce((a, b) => a + b.rate, 0) / feedbacks.length).toFixed(1)
               : 'N/A'}
           </p>

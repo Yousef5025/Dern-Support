@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import axiosClient from "../axiosClient";
 import { Link } from "react-router-dom";
 import { useStateContext } from "../contexts/contextprovider";
-import "../modules/Feedbacks.css";
 
 export default function Feedbacks() {
   const [feedbacks, setFeedbacks] = useState([]);

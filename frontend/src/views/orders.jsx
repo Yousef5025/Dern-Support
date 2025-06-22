@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import axiosClient from "../axiosClient";
 import { Link } from "react-router-dom";
 import { useStateContext } from "../contexts/contextprovider";
-import "../modules/CustomerView.css";
 
 export default function CustomerView() {
   const [orders, setOrders] = useState([]);
